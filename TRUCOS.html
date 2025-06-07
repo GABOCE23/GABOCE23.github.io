@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Trucos de Skateboarding</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #f1f1f1;
+    }
+
+    header {
+      background: #1e88e5;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .trick-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .trick-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .trick-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #90caf9;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 1rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trucos de Skateboarding</h1>
+    <p>Aprende los mejores trucos con estilo</p>
+      <a href="ZIHUASKATE.html" class="text-blue-500 hover:underline">Volver a Inicio</a>
+  </header>
+
+  <div class="container">
+    <div class="trick-card">
+      <div class="trick-title">Heelflip</div>
+      <div class="video-container">
+        <video controls>
+          <source src="KICKFLIP.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="trick-card">
+      <div class="trick-title">Pop shuvit</div>
+      <div class="video-container">
+        <video controls>
+          <source src="SHOVIT.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="trick-card">
+      <div class="trick-title">Ollie</div>
+      <div class="video-container">
+        <video controls>
+          <source src="OLLIE.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 ZIHUASKATE. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

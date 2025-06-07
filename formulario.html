@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta Skateboarding</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+            color: #000;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Encuesta sobre Skateboarding</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">¿Cuál es tu nombre?</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="experiencia">¿Cuánto tiempo llevas practicando skateboarding?</label>
+        <input type="text" id="experiencia" name="experiencia">
+
+        <label for="opiniones">¿Qué opinas de nuestra página sobre skateboarding?</label>
+        <textarea id="opiniones" name="opiniones" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <a href="zihuaskate.html">Ir a la página principal de Skateboarding</a>
+
+</body>
+</html>
